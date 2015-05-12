@@ -15,7 +15,24 @@ The code requires [https://github.com/petters/spii](SPII).
 
 
 #### Windows 
-Update include/compile_script.m with the correct folders to Eigen and SPII.
+Update include/compile_script.m with the correct folders to Eigen and SPII:
+```
+...
+%%%%%%%%%
+% ACTION REQUIRED:
+% Point this to your Eigen include directory.
+extra_args{end+1} = '-I"C:\Program Files\Eigen"';
+%%%%%%%%
+
+% Default installation directories for Spii
+extra_args{end+1} = '-I"C:\Program Files\SPII\include"';
+extra_args{end+1} = '-L"C:\Program Files\SPII\lib"';
+...
+```
+
+### Linux/OSX
+
+Install SPII in the default path.
 
 #### Examples
 A good place to start is with the two scripts:  
