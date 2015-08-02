@@ -11,7 +11,7 @@ The code has been tested on:
 
 Getting started 
 ----------
-The code requires [https://github.com/petters/spii](SPII). 
+The code requires [SPII](https://github.com/petters/spii), which is used to perform local optimization via automatic differentiation. 
 
 
 #### Windows 
